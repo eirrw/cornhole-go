@@ -25,7 +25,7 @@ func main() {
 			break
 		}
 	} else {
-		app := tui.New(configuration)
+		app := tui.Get(configuration)
 		if err = app.Run(); err != nil {
 			log.Fatal(err)
 		}
